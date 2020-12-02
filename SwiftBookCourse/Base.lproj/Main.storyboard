@@ -38,16 +38,28 @@
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="fDV-Sj-EtK"/>
+                                            <constraint firstAttribute="width" secondItem="O7F-6I-m2n" secondAttribute="height" multiplier="1:1" id="9VV-Xp-H1H"/>
+                                            <constraint firstAttribute="width" priority="999" constant="100" id="T8y-eD-re6"/>
+                                            <constraint firstAttribute="height" priority="999" constant="100" id="fDV-Sj-EtK"/>
                                         </constraints>
                                     </view>
                                     <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x26-Dq-hfE">
                                         <rect key="frame" x="0.0" y="150" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" priority="999" constant="100" id="DVV-wa-nng"/>
+                                            <constraint firstAttribute="width" secondItem="x26-Dq-hfE" secondAttribute="height" multiplier="1:1" id="Y1e-rR-Njm"/>
+                                            <constraint firstAttribute="height" priority="999" constant="100" id="a61-Lp-Qox"/>
+                                        </constraints>
                                     </view>
                                     <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ydq-hu-irG">
                                         <rect key="frame" x="0.0" y="300" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="999" constant="100" id="EFN-06-ths"/>
+                                            <constraint firstAttribute="width" priority="999" constant="100" id="Lea-mf-EyH"/>
+                                            <constraint firstAttribute="width" secondItem="Ydq-hu-irG" secondAttribute="height" multiplier="1:1" id="Str-Fn-6CW"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>

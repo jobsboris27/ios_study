@@ -57,6 +57,7 @@ class ViewController: UIViewController {
   private func configureLights() {
     allLights.forEach { light in
       light.layer.cornerRadius = light.bounds.size.width / 2
+      light.clipsToBounds = true
     }
   }
   
