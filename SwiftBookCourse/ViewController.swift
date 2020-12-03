@@ -7,104 +7,66 @@
 
 import UIKit
 
-enum TrafficLightsState: Int {
-  case initial = 0, red, yellow, green
-}
-
-struct Translations {
-  static let initialButtonText = "Start"
-  static let nextButtonText = "Next"
-}
 
 class ViewController: UIViewController {
   // MARK: IB Outlets
-  @IBOutlet weak var redLight: UIView!
-  @IBOutlet weak var yellowLight: UIView!
-  @IBOutlet weak var greenLight: UIView!
-  @IBOutlet weak var actionButton: UIButton!
-  // MARK: Public Properties
+  @IBOutlet weak var redLabel: UILabel!
+  @IBOutlet weak var greenLabel: UILabel!
+  @IBOutlet weak var blueLabel: UILabel!
+  @IBOutlet weak var board: UIView!
 
   // MARK: Private Properties
-  private lazy var allLights: [UIView] = [
-    redLight,
-    yellowLight,
-    greenLight
-  ]
-  private var currentTrafficLightsState: TrafficLightsState = TrafficLightsState.initial
+  private let redSliderTag = 0
+  private let greenSliderTag = 1
+  private let blueSliderTag = 2
+  
+  private var redSliderValue = 0
+  private var greenSliderValue = 0
+  private var blueSliderValue = 0
 
   // MARK: Override Methods
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    configureButton()
-    configureLights()
-
-    turnOffLights()
+    configureLabels()
+    drawOnBoard()
   }
 
   // MARK: IB Actions
-  @IBAction func changeTrafficLightsState(_ sender: UIButton) {
-    changeCurrentTrafficLightsState()
-    updateButtonText(by: currentTrafficLightsState)
-    updateLights()
-  }
+  @IBAction func changeColor(_ sender: Any) {
+    guard let slider = sender as? UISlider else { return }
 
-  // MARK: Private Methods
-  private func configureButton() {
-    actionButton.layer.cornerRadius = 10
-  }
-  
-  private func configureLights() {
-    allLights.forEach { light in
-      light.layer.cornerRadius = light.bounds.size.width / 2
-      light.clipsToBounds = true
-    }
-  }
-  
-  private func turnOffLights() {
-    allLights.forEach { light in
-      light.alpha = 0.3
-    }
-  }
-  
-  private func turnOnLight(light: UIView) {
-    light.alpha = 1
-  }
-  
-  private func changeCurrentTrafficLightsState() {
-    let newValue = currentTrafficLightsState.rawValue + 1
-    
-    if let newState = TrafficLightsState(rawValue: newValue) {
-      currentTrafficLightsState = newState
-    } else {
-      currentTrafficLightsState = TrafficLightsState.red
-    }
-  }
-  
-  private func updateButtonText(by state: TrafficLightsState) {
-    actionButton?.setTitle(
-      state == TrafficLightsState.initial ?
-        Translations.initialButtonText :
-        Translations.nextButtonText,
-      for: .normal
-    )
-  }
-  
-  private func updateLights() {
-    turnOffLights()
+    let sliderValue = Int(slider.value)
+    let sliderValueAsText = String(sliderValue)
 
-    switch currentTrafficLightsState {
-    case .red:
-      turnOnLight(light: redLight)
+    switch slider.tag {
+    case redSliderTag:
+      redLabel.text = sliderValueAsText
+      redSliderValue = sliderValue
       break
-    case .yellow:
-      turnOnLight(light: yellowLight)
+    case greenSliderTag:
+      greenLabel.text = sliderValueAsText
+      greenSliderValue = sliderValue
       break
-    case .green:
-      turnOnLight(light: greenLight)
+    case blueSliderTag:
+      blueLabel.text = sliderValueAsText
+      blueSliderValue = sliderValue
       break
     default: break
     }
+
+    drawOnBoard()
+  }
+  
+  // MARK: Private methods
+  private func configureLabels() {
+    redLabel.text = String(redSliderValue)
+    greenLabel.text = String(greenSliderValue)
+    blueLabel.text = String(blueSliderValue)
+  }
+
+  private func drawOnBoard() {
+    board.backgroundColor = UIColor(red: CGFloat(redSliderValue)/255.0, green: CGFloat(greenSliderValue)/255.0, blue: CGFloat(blueSliderValue)/255.0, alpha: 1)
   }
 }
 
