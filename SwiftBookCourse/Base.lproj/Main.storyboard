@@ -39,25 +39,19 @@
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="O7F-6I-m2n" secondAttribute="height" multiplier="1:1" id="9VV-Xp-H1H"/>
-                                            <constraint firstAttribute="width" priority="999" constant="100" id="T8y-eD-re6"/>
-                                            <constraint firstAttribute="height" priority="999" constant="100" id="fDV-Sj-EtK"/>
                                         </constraints>
                                     </view>
                                     <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x26-Dq-hfE">
                                         <rect key="frame" x="0.0" y="150" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" priority="999" constant="100" id="DVV-wa-nng"/>
                                             <constraint firstAttribute="width" secondItem="x26-Dq-hfE" secondAttribute="height" multiplier="1:1" id="Y1e-rR-Njm"/>
-                                            <constraint firstAttribute="height" priority="999" constant="100" id="a61-Lp-Qox"/>
                                         </constraints>
                                     </view>
                                     <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ydq-hu-irG">
                                         <rect key="frame" x="0.0" y="300" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" priority="999" constant="100" id="EFN-06-ths"/>
-                                            <constraint firstAttribute="width" priority="999" constant="100" id="Lea-mf-EyH"/>
                                             <constraint firstAttribute="width" secondItem="Ydq-hu-irG" secondAttribute="height" multiplier="1:1" id="Str-Fn-6CW"/>
                                         </constraints>
                                     </view>
@@ -67,11 +61,14 @@
                         <viewLayoutGuide key="safeArea" id="kO0-N4-Nq5"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="VvG-vH-gSF" firstAttribute="leading" secondItem="kO0-N4-Nq5" secondAttribute="leading" constant="137.5" id="Z20-a9-ODD"/>
+                            <constraint firstItem="O7F-6I-m2n" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="100:667" id="PuN-xq-8JM"/>
+                            <constraint firstItem="Ydq-hu-irG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="100:667" id="Yeg-KI-bup"/>
+                            <constraint firstItem="x26-Dq-hfE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="100:667" id="bYe-QL-Ize"/>
                             <constraint firstItem="VvG-vH-gSF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bge-oL-dLp"/>
                             <constraint firstItem="VvG-vH-gSF" firstAttribute="centerX" secondItem="rMh-cQ-27q" secondAttribute="centerX" id="bvj-9L-w1D"/>
                             <constraint firstItem="VvG-vH-gSF" firstAttribute="top" secondItem="kO0-N4-Nq5" secondAttribute="top" constant="60" id="eZF-LB-c6u"/>
                             <constraint firstItem="kO0-N4-Nq5" firstAttribute="bottom" secondItem="rMh-cQ-27q" secondAttribute="bottom" constant="20" id="qxd-gV-Qat"/>
+                            <constraint firstItem="VvG-vH-gSF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="100:667" id="yFt-9l-U9L"/>
                         </constraints>
                     </view>
                     <connections>

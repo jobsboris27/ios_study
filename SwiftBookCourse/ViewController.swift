@@ -35,11 +35,13 @@ class ViewController: UIViewController {
   // MARK: Override Methods
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    configureButton()
-    configureLights()
 
     turnOffLights()
+  }
+  
+  override func viewWillLayoutSubviews() {
+    configureLights()
+    configureButton()
   }
 
   // MARK: IB Actions
@@ -57,9 +59,9 @@ class ViewController: UIViewController {
   private func configureLights() {
     allLights.forEach { light in
       light.layer.cornerRadius = light.bounds.size.width / 2
-      light.clipsToBounds = true
     }
   }
+  
   
   private func turnOffLights() {
     allLights.forEach { light in
