@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A11EA776258CBF8900C53358 /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11EA775258CBF8900C53358 /* UIColor+ext.swift */; };
+		A13BFD0F258C98BE005F4984 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13BFD0E258C98BE005F4984 /* BoardViewController.swift */; };
 		A1C1197725757F2A0095BAB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1197625757F2A0095BAB3 /* AppDelegate.swift */; };
 		A1C1197925757F2A0095BAB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1197825757F2A0095BAB3 /* SceneDelegate.swift */; };
-		A1C1197B25757F2A0095BAB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1197A25757F2A0095BAB3 /* ViewController.swift */; };
+		A1C1197B25757F2A0095BAB3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1197A25757F2A0095BAB3 /* SettingsViewController.swift */; };
 		A1C1197E25757F2A0095BAB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C1197C25757F2A0095BAB3 /* Main.storyboard */; };
 		A1C1198025757F2E0095BAB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C1197F25757F2E0095BAB3 /* Assets.xcassets */; };
 		A1C1198325757F2E0095BAB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C1198125757F2E0095BAB3 /* LaunchScreen.storyboard */; };
-		A1C1198E25757F2E0095BAB3 /* SwiftBookCourseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1198D25757F2E0095BAB3 /* SwiftBookCourseTests.swift */; };
-		A1C1199925757F2F0095BAB3 /* SwiftBookCourseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1199825757F2F0095BAB3 /* SwiftBookCourseUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +35,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A11EA775258CBF8900C53358 /* UIColor+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
+		A13BFD0E258C98BE005F4984 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		A1C1197325757F2A0095BAB3 /* SwiftBookCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBookCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C1197625757F2A0095BAB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1C1197825757F2A0095BAB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1C1197A25757F2A0095BAB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1C1197A25757F2A0095BAB3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A1C1197D25757F2A0095BAB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1C1197F25757F2E0095BAB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1C1198225757F2E0095BAB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1C1198425757F2E0095BAB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C1198925757F2E0095BAB3 /* SwiftBookCourseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBookCourseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1C1198D25757F2E0095BAB3 /* SwiftBookCourseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBookCourseTests.swift; sourceTree = "<group>"; };
-		A1C1198F25757F2E0095BAB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C1199425757F2F0095BAB3 /* SwiftBookCourseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBookCourseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1C1199825757F2F0095BAB3 /* SwiftBookCourseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBookCourseUITests.swift; sourceTree = "<group>"; };
-		A1C1199A25757F2F0095BAB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +74,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A11EA774258CBF6600C53358 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				A11EA775258CBF8900C53358 /* UIColor+ext.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		A13BFD0D258C9893005F4984 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1197A25757F2A0095BAB3 /* SettingsViewController.swift */,
+				A13BFD0E258C98BE005F4984 /* BoardViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		A1C1196A25757F2A0095BAB3 = {
 			isa = PBXGroup;
 			children = (
 				A1C1197525757F2A0095BAB3 /* SwiftBookCourse */,
-				A1C1198C25757F2E0095BAB3 /* SwiftBookCourseTests */,
-				A1C1199725757F2F0095BAB3 /* SwiftBookCourseUITests */,
 				A1C1197425757F2A0095BAB3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,33 +112,16 @@
 		A1C1197525757F2A0095BAB3 /* SwiftBookCourse */ = {
 			isa = PBXGroup;
 			children = (
+				A11EA774258CBF6600C53358 /* Extentions */,
+				A13BFD0D258C9893005F4984 /* View Controllers */,
 				A1C1197625757F2A0095BAB3 /* AppDelegate.swift */,
 				A1C1197825757F2A0095BAB3 /* SceneDelegate.swift */,
-				A1C1197A25757F2A0095BAB3 /* ViewController.swift */,
 				A1C1197C25757F2A0095BAB3 /* Main.storyboard */,
 				A1C1197F25757F2E0095BAB3 /* Assets.xcassets */,
 				A1C1198125757F2E0095BAB3 /* LaunchScreen.storyboard */,
 				A1C1198425757F2E0095BAB3 /* Info.plist */,
 			);
 			path = SwiftBookCourse;
-			sourceTree = "<group>";
-		};
-		A1C1198C25757F2E0095BAB3 /* SwiftBookCourseTests */ = {
-			isa = PBXGroup;
-			children = (
-				A1C1198D25757F2E0095BAB3 /* SwiftBookCourseTests.swift */,
-				A1C1198F25757F2E0095BAB3 /* Info.plist */,
-			);
-			path = SwiftBookCourseTests;
-			sourceTree = "<group>";
-		};
-		A1C1199725757F2F0095BAB3 /* SwiftBookCourseUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A1C1199825757F2F0095BAB3 /* SwiftBookCourseUITests.swift */,
-				A1C1199A25757F2F0095BAB3 /* Info.plist */,
-			);
-			path = SwiftBookCourseUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +257,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C1197B25757F2A0095BAB3 /* ViewController.swift in Sources */,
+				A1C1197B25757F2A0095BAB3 /* SettingsViewController.swift in Sources */,
 				A1C1197725757F2A0095BAB3 /* AppDelegate.swift in Sources */,
 				A1C1197925757F2A0095BAB3 /* SceneDelegate.swift in Sources */,
+				A13BFD0F258C98BE005F4984 /* BoardViewController.swift in Sources */,
+				A11EA776258CBF8900C53358 /* UIColor+ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C1198E25757F2E0095BAB3 /* SwiftBookCourseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C1199925757F2F0095BAB3 /* SwiftBookCourseUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
